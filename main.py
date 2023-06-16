@@ -1,5 +1,5 @@
 from elia import Elia
-import vaughn
+from vaughn import Vaughn
 import jay
 
 text = ("Welcome to the Time Adventure Game!" 
@@ -15,6 +15,10 @@ def play_elia():
         elia = Elia()
         return elia.past()
 
+def play_vaughn():
+        vaughn = Vaughn()
+        return vaughn.present()
+
 # class Prompt:
 #     def __init__(self, opt1, opt2, opt3):
 #         self.opt1 = opt1
@@ -26,12 +30,13 @@ def play_elia():
 def play(player_input):
     while player_input.upper() != "QUIT":
         # print() 
-        player_input = input("You enter your time machine and it asks you for a destination: PAST, PRESENT or FUTURE. ")
+        player_input = input("You enter your time machine and it asks you for a destination: PAST, PRESENT or FUTURE. > ")
         if player_input.upper() == "PAST":
             print("PAST")
             return play_elia()
         elif player_input.upper() == "PRESENT":
             print("PRESENT")
+            return play_vaughn()
             #run vaughn.py
         elif player_input.upper() == "FUTURE":
             print("FUTURE")
