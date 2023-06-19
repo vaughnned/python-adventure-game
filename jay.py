@@ -15,6 +15,13 @@ class Jay:
             print("Cautiously, you look around. You notice the cameras next to your desk on the right"
                   "and the closet door slightly ajar on your left."
                   "Do you go to the CLOSET or take a look at the CAMERAS?")
+        def closet(self):
+            print("You approach the closet and slowly open the door to find... nothing?"
+                  "Well, more than nothing, it seems to be an infinite void and just as you"
+                  "start to wonder how a void got in your broom closet, a foot kicks you and you fall"
+                  "into the abyss, eternally") #then died
+        def cameras(self):
+            print("")
         def follow(self):
             print("You follow the footprints behind you time machine, only to discover that the"
                   "plate has been pried off and a knife has been stabbed in the core of the machine."
@@ -36,7 +43,17 @@ class Jay:
                   "'It's your fault, MY own fault,' you hear yourself say. 'I had to do it to stop it from happening...'" 
                   "you hear as you take your last breath.") #then died
         def fight(self):
-            print("You kick back and manage to hit you adversary right in the knee, making them buckle and ")
+            print("You manage to catch your balance. You kick back and manage to hit your adversary right in the knee, making them fall back."
+                  "You turn around only to see-- yourself?! But no time to think as they--you?--are starting to get back up."
+                  "Do you try to pin them down and make them EXPLAIN themself, or do you RUN?")
+        def explain(self):
+            print("You pin the doppelganger down, grabbing the knife strapped to your belt and holding it below their chin."
+                  "'Who are you? You have 60 seconds to explain yourself.' You say."
+                  "'I'm you, from 3 days from now. *You* had the grand idea to start this whole thing by time traveling, and"
+                  "now you've ripped the fabric of our very own reality. There's not much time left, I came back to stop you from traveling"
+                  "to where I landed, but every second we keep speaking, the tear grows larger. My chance is gone, it's your turn now."
+                  "They grab your hand holding the knife and thats it--you see the life drain from their eyes as you hear"
+                  "your heart pounding in your ears. ")
 
         def died(self):
             print("YOU DIED.")
