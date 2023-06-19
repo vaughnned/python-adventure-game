@@ -1,9 +1,6 @@
 class Elia:
     def __init__(self):
         pass
-
-    # def enter(self, key):
-    #         self.key = key
     def eat(self):
         quit = False
         while not quit:
