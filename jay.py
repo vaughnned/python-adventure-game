@@ -1,7 +1,7 @@
 class Jay:
-       def __init__(self):
+        def __init__(self):
           pass
-       def future(self):
+        def future(self):
             print("You have chosen the FUTURE and find yourself in the same lab as before,"
                   "only you look at the clock to see only 12 minutes have passed. You look around and see"
                   "that a trail of muddy footprints lead from the front of your time machine to right behind it."
