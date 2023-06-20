@@ -1,9 +1,15 @@
+from help import Directory
+
 player_input = ""
 
 class Vaughn:
     
     def __init__(self):
         pass
+
+    def play_help(self):
+        help_dir = Directory()
+        help_dir.display_help()
 
     def enter(self):
         quit = False
@@ -38,6 +44,8 @@ class Vaughn:
                 quit = True
             elif player_input.upper() == "QUIT":
                 quit = True
+            if player_input.upper() == "HELP":
+                print(self.play_help())
     
     def yell(self):
         quit = False
@@ -57,6 +65,8 @@ class Vaughn:
                 print()
             elif player_input.upper() == "QUIT":
                 quit = True
+            if player_input.upper() == "HELP":
+                print(self.play_help())
 
     def search(self):
         quit = False
@@ -76,6 +86,8 @@ class Vaughn:
                 return self.enter()
             elif player_input.upper() == "QUIT":
                 quit = True
+            if player_input.upper() == "HELP":
+                print(self.play_help())
         
     def look(self):
         quit = False
@@ -95,6 +107,8 @@ class Vaughn:
                 return self.yell()
             elif player_input.upper() == "QUIT":
                 quit = True
+            if player_input.upper() == "HELP":
+                print(self.play_help())
 
     def present(self):
         quit = False
@@ -119,5 +133,7 @@ class Vaughn:
                 return self.look()
             elif player_input.upper() == "QUIT":
                 quit = True
+            if player_input.upper() == "HELP":
+                print(self.play_help())
 
 
