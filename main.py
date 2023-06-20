@@ -55,7 +55,6 @@ def play(player_input):
         elif player_input.upper() == "PRESENT":
             print("PRESENT")
             return play_vaughn()
-
         elif player_input.upper() == "FUTURE":
             print("FUTURE")
         elif player_input.upper() == "HELP":
