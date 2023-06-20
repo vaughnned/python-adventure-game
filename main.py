@@ -1,7 +1,7 @@
 from elia import Elia
 from vaughn import Vaughn
 from jay import Jay
-from help import Directory
+
 
 
 text = (
@@ -31,21 +31,14 @@ def play_jay():
     return jay.future()
 
 
-def play_help():
-    help_dir = Directory()
-    help_dir.display_help()
 
 
-# class Prompt:
-#     def __init__(self, opt1, opt2, opt3):
-#         self.opt1 = opt1
-#         self.opt2 = opt2
-#         self.opt3 = opt3
+
 
 
 def play(player_input):
     while player_input.upper() != "QUIT":
-        # print()
+    
         player_input = input(
             "You enter your time machine and it asks you for a destination: PAST, PRESENT or FUTURE. > "
         )

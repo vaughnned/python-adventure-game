@@ -1,8 +1,13 @@
+from help import Directory
 
 
 class Elia:
     def __init__(self):
         pass
+
+    def play_help(self):
+        help_dir = Directory()
+        help_dir.display_help()
 
     def eat(self):
         quit = False
@@ -27,8 +32,8 @@ class Elia:
                 return
 
             elif player_input.upper() == "HELP":
-                return help()
-            quit = True
+                return self.play_help()
+        
 
     def past(self):
         quit = False
@@ -56,8 +61,7 @@ class Elia:
             elif player_input.upper() == "QUIT":
                 return
             elif player_input.upper() == "HELP":
-                return help()
-            quit = True
+                return self.play_help()
 
     def fight(self):
         quit = False
@@ -81,8 +85,7 @@ class Elia:
                 return
 
             elif player_input.upper() == "HELP":
-                return help()
-            quit = True
+                return self.play_help()
 
     def enter(self):
         quit = False
@@ -98,8 +101,8 @@ class Elia:
                 return
 
             elif player_input.upper() == "HELP":
-                return help()
-            quit = True
+                return self.play_help()
+            # quit = True
 
     def cont(self):
         quit = False
@@ -121,8 +124,7 @@ class Elia:
                 return
 
             elif player_input.upper() == "HELP":
-                return help()
-            quit = True
+                return self.play_help()
 
     def take(self):
         quit = False
@@ -148,5 +150,4 @@ class Elia:
                 return
 
             elif player_input.upper() == "HELP":
-                return help()
-            quit = True
+                return self.play_help()
