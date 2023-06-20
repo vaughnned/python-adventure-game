@@ -1,6 +1,9 @@
+
+
 class Elia:
     def __init__(self):
         pass
+
     def eat(self):
         quit = False
         while not quit:
@@ -21,7 +24,11 @@ class Elia:
                 print()
                 return self.cont()
             elif player_input.upper() == "QUIT":
-                quit = True
+                return
+
+            elif player_input.upper() == "HELP":
+                return help()
+            quit = True
 
     def past(self):
         quit = False
@@ -47,7 +54,10 @@ class Elia:
                 print()
                 return self.fight()
             elif player_input.upper() == "QUIT":
-                quit = True
+                return
+            elif player_input.upper() == "HELP":
+                return help()
+            quit = True
 
     def fight(self):
         quit = False
@@ -68,7 +78,11 @@ class Elia:
                 )
                 return self.enter()
             elif player_input.upper() == "QUIT":
-                quit = True
+                return
+
+            elif player_input.upper() == "HELP":
+                return help()
+            quit = True
 
     def enter(self):
         quit = False
@@ -80,6 +94,12 @@ class Elia:
                 return self.eat()
             elif player_input.upper() == "CONT":
                 return self.take()
+            elif player_input.upper() == "QUIT":
+                return
+
+            elif player_input.upper() == "HELP":
+                return help()
+            quit = True
 
     def cont(self):
         quit = False
@@ -98,7 +118,11 @@ class Elia:
                 print()
                 return
             elif player_input.upper() == "QUIT":
-                quit = True
+                return
+
+            elif player_input.upper() == "HELP":
+                return help()
+            quit = True
 
     def take(self):
         quit = False
@@ -121,4 +145,8 @@ class Elia:
                 )
                 return
             elif player_input.upper() == "QUIT":
-                quit = True
+                return
+
+            elif player_input.upper() == "HELP":
+                return help()
+            quit = True
