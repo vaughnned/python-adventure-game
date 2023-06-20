@@ -28,7 +28,7 @@ def play_vaughn():
 
 def play_jay():
     jay = Jay()
-    return jay.future()
+    return jay.play_future()
 
 
 
@@ -50,6 +50,7 @@ def play(player_input):
             return play_vaughn()
         elif player_input.upper() == "FUTURE":
             print("FUTURE")
+            return play_jay()
         elif player_input.upper() == "HELP":
             print("HELP")
 
